@@ -9,14 +9,68 @@
     <title>Objetos JavaScript</title>
     <script>
         const pessoa = {
-            nome: "João",
-            idade: 30,
+            nome: "Elker",
+            idade: 16,
             saudacao: function() {
                 console.log("Olá, meu nome é " + this.nome);
             }
         };
+        pessoa.saudacao();
 
-     pessoa.saudacao(); //Chama o método saudacao do objeto pessoa
+        const musica = {
+            nome: "My Own Worst Enemy",
+            duracao: "2:49",
+            artista: "Lit",
+            album: "A Place In The Sun",
+            tocar: function() {
+                console.log("Música " + this.nome + " selecionada.\nArtista: " + this.artista + ".\nÁlbum: " + this.album + ".\nDuração: " + this.duracao)
+            }
+        };
+        musica.tocar();
+
+        const musica2 = {
+            nome: "Helena",
+            duracao: "3:24",
+            artista: "My Chemical Romance",
+            album: "Three Cheers for Sweet Revenge",
+            tocar: function() {
+                console.log("Música " + this.nome + " selecionada.\nArtista: " + this.artista + ".\nÁlbum: " + this.album + ".\nDuração: " + this.duracao)
+            }
+        };
+        musica2.tocar();
+        
+        const musica3 = {
+            nome: "Everlong",
+            duracao: "4:10",
+            artista: "Foo Fighters",
+            album: "The Colour And The Shape",
+            tocar: function() {
+                console.log("Música " + this.nome + " selecionada.\nArtista: " + this.artista + ".\nÁlbum: " + this.album + ".\nDuração: " + this.duracao)
+            }
+        };
+        musica3.tocar();
+
+        const musica4 = {
+            nome: "Alberto Balsalm",
+            duracao: "5:10",
+            artista: "Aphex Twin",
+            album: "...I Care Because You Do",
+            tocar: function() {
+                console.log("Música " + this.nome + " selecionada.\nArtista: " + this.artista + ".\nÁlbum: " + this.album + ".\nDuração: " + this.duracao)
+            }
+        };
+        musica4.tocar();
+
+        const musica5 = {
+            nome: "Your Pain Is My Now",
+            duracao: "4:03",
+            artista: "Title Fight",
+            album: "Hyperview",
+            tocar: function() {
+                console.log("Música " + this.nome + " selecionada.\nArtista: " + this.artista + ".\nÁlbum: " + this.album + ".\nDuração: " + this.duracao)
+            }
+        };
+        musica5.tocar();
     </script>
 </body>
 </html>
